@@ -183,13 +183,15 @@ export const ModulesSection: React.FC = () => {
 
         {/* NAVEGAÇÃO DE ABAS MÓDULOS */}
         <div
+          className="no-scrollbar"
           style={{
             display: 'flex',
-            gap: '8px',
-            overflowX: 'auto',
-            paddingBottom: '16px',
+            gap: '10px',
+            flexWrap: 'wrap',
+            paddingBottom: '8px',
             marginBottom: '40px',
             justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
           {modules.map((mod, idx) => (

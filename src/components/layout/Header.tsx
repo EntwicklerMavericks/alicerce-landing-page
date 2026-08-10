@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { AlicerceLogo } from '../ui/AlicerceLogo';
 
 export const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,49 +35,8 @@ export const Header: React.FC = () => {
     >
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* LOGO ALICERCE */}
-        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-          <div
-            style={{
-              width: '40px',
-              height: '40px',
-              borderRadius: '12px',
-              background: 'var(--bg-deep)',
-              border: '1px solid var(--border-gold-glow)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: 'var(--shadow-gold-sm)',
-            }}
-          >
-            <ShieldCheck size={22} color="var(--color-gold-primary)" />
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span
-              style={{
-                fontFamily: 'var(--font-display)',
-                fontWeight: 800,
-                fontSize: '1.4rem',
-                letterSpacing: '-0.03em',
-                color: '#ffffff',
-                lineHeight: 1,
-              }}
-            >
-              ALICERCE
-            </span>
-            <span
-              style={{
-                fontFamily: 'var(--font-body)',
-                fontSize: '0.65rem',
-                color: 'var(--color-gold-light)',
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                fontWeight: 600,
-                opacity: 0.8,
-              }}
-            >
-              FINANCE SYSTEM
-            </span>
-          </div>
+        <a href="#" style={{ textDecoration: 'none' }}>
+          <AlicerceLogo size="md" showTagline={true} />
         </a>
 
         {/* NAVIGATION DESKTOP */}

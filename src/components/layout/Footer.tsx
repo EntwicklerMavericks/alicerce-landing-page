@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck } from 'lucide-react';
+import { AlicerceLogo } from '../ui/AlicerceLogo';
 
 export const Footer: React.FC = () => {
   const APP_URL = 'https://alicerce-frontend.pages.dev/';
@@ -11,13 +11,8 @@ export const Footer: React.FC = () => {
           
           {/* MARCA */}
           <div style={{ gridColumn: 'span 2' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-              <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'var(--bg-deep)', border: '1px solid var(--border-gold-glow)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <ShieldCheck size={18} color="var(--color-gold-primary)" />
-              </div>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.2rem', color: '#fff' }}>
-                ALICERCE
-              </span>
+            <div style={{ marginBottom: '16px' }}>
+              <AlicerceLogo size="md" showTagline={true} />
             </div>
             <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', maxWidth: '320px', lineHeight: 1.6 }}>
               Sistema de gestão financeira executiva orientada a metas, projeções temporais de 12 meses e inteligência de consumo consciente.
