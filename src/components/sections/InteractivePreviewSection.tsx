@@ -30,20 +30,20 @@ export const InteractivePreviewSection: React.FC = () => {
           </p>
         </div>
 
-        <Card glow style={{ maxWidth: '850px', margin: '0 auto', padding: '40px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', alignItems: 'center' }}>
+        <Card glow style={{ maxWidth: '850px', margin: '0 auto', padding: '20px', width: '100%', boxSizing: 'border-box' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', alignItems: 'center' }}>
             
             {/* PAINEL DE CONTROLES */}
             <div>
-              <h3 style={{ fontSize: '1.3rem', marginBottom: '20px', color: 'var(--color-gold-light)' }}>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '16px', color: 'var(--color-gold-light)' }}>
                 1. Simule uma Compra por Impulso
               </h3>
 
               {/* SLIDER VALOR DO DESEJO */}
-              <div style={{ marginBottom: '24px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                  <label style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>Valor do Produto Desejado:</label>
-                  <span style={{ fontWeight: 800, color: 'var(--color-gold-primary)', fontFamily: 'var(--font-mono)' }}>
+              <div style={{ marginBottom: '20px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '6px', marginBottom: '6px' }}>
+                  <label style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', minWidth: 0 }}>Valor do Produto Desejado:</label>
+                  <span style={{ fontWeight: 800, color: 'var(--color-gold-primary)', fontFamily: 'var(--font-mono)', fontSize: '0.9rem', whiteSpace: 'nowrap' }}>
                     R$ {valorImpulso.toLocaleString('pt-BR')}
                   </span>
                 </div>
@@ -59,10 +59,10 @@ export const InteractivePreviewSection: React.FC = () => {
               </div>
 
               {/* SLIDER DIAS QUARENTENA */}
-              <div style={{ marginBottom: '28px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                  <label style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>Dias de Esfriamento Oculto:</label>
-                  <span style={{ fontWeight: 800, color: '#ffffff' }}>
+              <div style={{ marginBottom: '24px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '6px', marginBottom: '6px' }}>
+                  <label style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', minWidth: 0 }}>Dias de Esfriamento Oculto:</label>
+                  <span style={{ fontWeight: 800, color: '#ffffff', fontSize: '0.9rem', whiteSpace: 'nowrap' }}>
                     {diasQuarentena} Dias
                   </span>
                 </div>

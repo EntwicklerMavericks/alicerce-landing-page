@@ -121,20 +121,24 @@ export const HeroSection: React.FC = () => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'space-between',
-                  paddingBottom: '16px',
+                  flexWrap: 'wrap',
+                  gap: '8px',
+                  paddingBottom: '12px',
                   marginBottom: '20px',
                   borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+                  width: '100%',
+                  boxSizing: 'border-box',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#EF4444' }} />
-                  <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#F59E0B' }} />
-                  <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#10B981' }} />
-                  <span style={{ fontSize: '0.8rem', color: 'var(--color-text-dim)', marginLeft: '8px' }}>app.alicerce.finance/dashboard</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#EF4444', flexShrink: 0 }} />
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#F59E0B', flexShrink: 0 }} />
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#10B981', flexShrink: 0 }} />
+                  <span style={{ fontSize: '0.75rem', color: 'var(--color-text-dim)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>app.alicerce.finance</span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ fontSize: '0.75rem', background: 'rgba(201, 167, 78, 0.15)', color: 'var(--color-gold-light)', padding: '4px 10px', borderRadius: '6px', fontWeight: 600 }}>
-                    ● PLANEJAMENTO ATIVO 2026-08
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', minWidth: 0 }}>
+                  <span style={{ fontSize: '0.7rem', background: 'rgba(201, 167, 78, 0.15)', color: 'var(--color-gold-light)', padding: '3px 8px', borderRadius: '6px', fontWeight: 600, whiteSpace: 'nowrap' }}>
+                    ● PLANEJAMENTO 2026-08
                   </span>
                 </div>
               </div>

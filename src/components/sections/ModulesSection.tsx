@@ -18,10 +18,10 @@ export const ModulesSection: React.FC = () => {
         'Consolidação atômica sem arredondamentos precoces',
       ],
       previewCard: (
-        <div style={{ background: '#18070A', padding: '24px', borderRadius: '16px', border: '1px solid var(--border-gold-subtle)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px' }}>
-            <span style={{ fontSize: '0.85rem', color: 'var(--color-gold-light)', fontWeight: 700 }}>Projeção Cumulativa 12 Meses</span>
-            <span style={{ fontSize: '0.75rem', background: 'rgba(52, 211, 153, 0.15)', color: '#34D399', padding: '2px 8px', borderRadius: '4px' }}>FOLGA ESTÁVEL</span>
+        <div style={{ background: '#18070A', padding: '18px', borderRadius: '16px', border: '1px solid var(--border-gold-subtle)', width: '100%', boxSizing: 'border-box' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+            <span style={{ fontSize: '0.85rem', color: 'var(--color-gold-light)', fontWeight: 700, minWidth: 0 }}>Projeção Cumulativa 12 Meses</span>
+            <span style={{ fontSize: '0.7rem', background: 'rgba(52, 211, 153, 0.15)', color: '#34D399', padding: '2px 8px', borderRadius: '4px', whiteSpace: 'nowrap' }}>FOLGA ESTÁVEL</span>
           </div>
           {/* GRÁFICO SINTÉTICO */}
           <div style={{ height: '140px', display: 'flex', alignItems: 'flex-end', gap: '8px', paddingBottom: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
