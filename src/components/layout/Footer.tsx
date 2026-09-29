@@ -15,7 +15,14 @@ export const Footer: React.FC = () => {
               <AlicerceLogo size="md" showTagline={true} />
             </div>
             <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', maxWidth: '320px', lineHeight: 1.6 }}>
-              Sistema de gestão financeira executiva orientada a metas, projeções temporais de 12 meses e inteligenc<span className="text-gold-gradient">IA</span> de consumo consciente.
+              Sistema de gestão financeira executiva orientada a metas, projeções temporais de 12 meses e inteligenc<span
+                className="text-gold-gradient"
+                style={{
+                  display: 'inline-block',
+                  paddingRight: '0.14em',
+                  marginRight: '-0.07em',
+                }}
+              >IA</span> de consumo consciente.
             </p>
           </div>
 
