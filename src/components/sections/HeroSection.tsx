@@ -52,7 +52,7 @@ export const HeroSection: React.FC = () => {
             }}
           >
             Esqueça planilhas genéricas.{' '}
-            <span className="text-gold-gradient">Construa patrimônio real</span> com inteligência de projeção.
+            <span className="text-gold-gradient">Construa patrimônio real</span> com inteligenc<span className="text-gold-gradient">IA</span> de projeção.
           </h1>
 
           {/* SUBHEADLINE */}
