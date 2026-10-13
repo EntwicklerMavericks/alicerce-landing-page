@@ -52,7 +52,17 @@ export const Footer: React.FC = () => {
         {/* BOTTOM COPYRIGHT */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', fontSize: '0.8rem', color: 'var(--color-text-dim)' }}>
           <div>© {new Date().getFullYear()} Alicerce Finance System. Todos os direitos reservados.</div>
-          <div>Desenvolvido com precisão matemática para o seu sucesso patrimonial.</div>
+          <div>
+            Desenvolvido por{' '}
+            <a
+              href="https://www.theodorodigital.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="theodoro-link"
+            >
+              Theodoro Digital
+            </a>
+          </div>
         </div>
       </div>
 
@@ -63,6 +73,16 @@ export const Footer: React.FC = () => {
         }
         .footer-link:hover {
           color: var(--color-gold-light);
+        }
+        .theodoro-link {
+          color: var(--color-gold-light);
+          font-weight: 500;
+          text-decoration: none;
+          transition: color var(--transition-fast), text-shadow var(--transition-fast);
+        }
+        .theodoro-link:hover {
+          color: var(--color-gold-bright);
+          text-decoration: underline;
         }
       `}</style>
     </footer>
